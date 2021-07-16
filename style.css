@@ -1,0 +1,215 @@
+html{
+	font-family: time new roman;
+	text-align: justify;
+	font-size: 16;
+}
+body{
+	margin: 0px;
+}
+header{
+	height: 240px;
+	background-image: url("logo.png");
+	animation-name: example;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+@keyframes example {
+  0%   {background-image: url("logo.png")}
+  50%  {background-image: url("anm.png")}
+  100% {background-image: url("logo.png")}
+}
+body{
+	background-color: darkgray;
+}
+nav{
+	margin: auto;
+	border: none;
+	padding: 0px;
+	width: 877px;
+	height: 72px;
+	box-sizing: border-box;
+	background-image:url("menu.png");
+}
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+nav>ul>li{
+	width: 17%;
+	height: 72px;
+	list-style-type: none;
+	display: inline-block;
+	position: relative;
+}
+nav li:last-child{
+	width: 30%;
+}
+nav:hover{
+	overflow: initial;
+}
+nav>ul>li>a{
+	display: flex;
+	width: 100%;
+	height: 72PX;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-decoration-line: none;
+}
+nav a:hover{
+	transform: scale(1.1);
+	transition-duration: 0.5s;
+	background-image: url("menu_select.png");
+	box-shadow: 10px 10px 5px grey;
+}
+#logo{
+	width: 825px;
+	height: 168px;
+	border: none;
+	margin: auto;
+	box-sizing: border-box;
+	position: relative;
+}
+.logo1{
+	color: white;
+	margin-top: 0px;
+}
+.logo2{
+	color: yellow;
+	margin: 0px;
+	padding-top: 50px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	text-shadow: 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.dropmenu{
+	display: none;
+	overflow: hidden;
+	position: absolute;
+}
+nav .drop:hover .dropmenu{
+	display: inline-block;
+	overflow: initial;
+	background-color: orange;
+	padding: 0px;
+}
+nav .drop:hover .dropmenu li{
+	width: auto	;
+	list-style-type: none;
+	border-bottom: 1px solid yellow;
+}
+nav .drop:hover .dropmenu a{
+	display: flex;
+	align-items: center;
+	text-decoration-line: none;
+	color: white;
+	padding: 10px;
+	width: auto;
+}
+
+
+main{
+	width: 837px;
+	margin: auto;
+	overflow: hidden;
+	background-image: url("content.png");
+	border: 1px solid gray;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+content{
+	margin-left: 10px;
+	width: 595px;
+	display: inline-block;
+	float: left;
+}
+content>ul>li{
+	margin-left: 40px;
+	list-style-image: url("bullet.png");
+}
+content>ul>li>a{
+	color: gray;
+	text-decoration-line: none;
+}
+content a:hover{
+	display: inline-block;
+	transform: scale(1.1);
+	transition-duration: 0.5s;
+}
+content img{
+	width: 300px;
+	height: 250px;
+	margin-left: 150px;
+}
+
+
+aside{
+	margin-right: 10px;
+	margin-left: 15px;
+	width: 190px;
+	display: inline-block;
+	float: right;
+}
+aside a{
+	color: orange;
+}
+aside a:hover{
+	text-decoration-line: none;
+	font-style: italic;
+}
+aside p{
+	margin-bottom: 0px;
+}
+.ngay{
+	margin-top: -15px;
+	font-size: 14;
+}
+aside>ul>li{
+	list-style-image: url("link.png");: 
+}
+form{
+	margin-bottom:  30px;
+	padding: 0px;
+	margin-top:  10px;
+}
+form img{
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+form input{
+	margin-right: 5px;
+	width: 140px;
+	height: 25px;
+	float: left;
+}
+.daude{
+	color: blue;
+	text-decoration-line: none;
+}
+.btt{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+.btt img{
+	width: 30px;
+	height: 30px;
+}
+footer{
+	padding-top: 10px;
+	padding-bottom: 10PX;
+	width: 878px;
+	margin: auto;
+	background-image: url("footer.png");
+	text-align: center;
+	color: white;
+}
+footer a{
+	text-decoration-line: none;
+	color: white;
+}
